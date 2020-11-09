@@ -1,0 +1,8 @@
+#!/usr/bin/env ruby
+
+require "bundler/setup"
+require "btcusd"
+require "amazing_print"
+
+ap Btcusd::Rate.call(date: ARGV[0], time: ARGV[1])
+
